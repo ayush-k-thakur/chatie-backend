@@ -29,6 +29,10 @@ app.use("/api/users", userRoutes);
 // 	res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 // });
 
+app.use("/", (req, res)=>{
+	res.send("Heelo");
+})
+
 server.listen(PORT, async () => {
 	await connectToMongoDB();
 	console.log(`Server Running on port ${PORT}`);
