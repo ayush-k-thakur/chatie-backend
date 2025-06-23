@@ -47,6 +47,7 @@ const io = new Server(server, {
 	cors: {
 		origin: ["https://chatie-frontend.vercel.app"],
 		methods: ["GET", "POST"],
+		credentials: true,
 	},
 });
 
