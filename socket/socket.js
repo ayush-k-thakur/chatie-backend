@@ -5,10 +5,16 @@ import express from "express";
 const app = express();
 
 const server = http.createServer(app);
+const allowedOrigins = [
+	"https://chatie-iota.vercel.app",
+	"http://localhost:5173",
+];
+
 const io = new Server(server, {
 	cors: {
-		origin: ["https://chatie-iota.vercel.app"],
+		origin: allowedOrigins,
 		methods: ["GET", "POST"],
+		credentials: true,
 	},
 });
 
