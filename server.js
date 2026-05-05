@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
   "https://chatie-iota.vercel.app",
-  "https://chatie-chatapp.vercel.app"
+  "https://chatie-chatapp.vercel.app",
   "http://localhost:5173",
 ];
 
