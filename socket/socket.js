@@ -7,6 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const allowedOrigins = [
 	"https://chatie-iota.vercel.app",
+	"https://chatie-chatapp.vercel.app"
 	"http://localhost:5173",
 ];
 
